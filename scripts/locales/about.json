@@ -1,0 +1,14 @@
+{
+  "es": {
+    "about.meta.title": "Sobre mí — RTN Software",
+    "about.meta.description": "Desarrollo web, automatización y software personalizado.",
+    
+    "about.title": "Sobre mí"
+  },
+  "en": {
+    "about.meta.title": "About Me — RTN Software",
+    "about.meta.description": "Web development, automation and custom software.",
+    
+    "about.title": "About Me"
+  }
+}

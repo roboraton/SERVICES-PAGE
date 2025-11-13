@@ -1,0 +1,16 @@
+{
+  "es": {
+    "nav.home": "Inicio",
+    "nav.about": "Sobre mí",
+    "nav.services": "Servicios",
+    "nav.contact": "Contacto",
+    "nav.references": "Referencias"
+  },
+  "en": {
+    "nav.home": "Home",
+    "nav.about": "About",
+    "nav.services": "Services",
+    "nav.contact": "Contact",
+    "nav.references": "References"
+  }
+}

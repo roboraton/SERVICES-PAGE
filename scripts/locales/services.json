@@ -1,0 +1,41 @@
+{
+  "es": {
+    "meta.title": "Servicios — RTN Software | Web & Automatización",
+    "meta.description": "Servicios profesionales de automatización, desarrollo web y software a medida.",
+
+    "hero.title": "Servicios",
+    "hero.subtitle": "Automatización, desarrollo y consultoría para que tu negocio crezca con inteligencia.",
+
+    "solutions.title": "Soluciones en acción",
+    "solutions.intro": "Proyectos reales que muestran nuestro impacto.",
+
+    "solutions.card1.title": "Bot de WhatsApp para clínicas",
+    "solutions.card1.text": "Sistema de reservas automatizado con recordatorios.",
+
+    "solutions.card2.title": "Panel web para reportes internos",
+    "solutions.card2.text": "Dashboard personalizado para métricas clave.",
+
+    "solutions.card3.title": "Optimización de sitio existente",
+    "solutions.card3.text": "Mejoras de carga, SEO y rendimiento."
+  },
+
+  "en": {
+    "meta.title": "Services — RTN Software | Web & Automation",
+    "meta.description": "Professional automation, web development and custom software services.",
+
+    "hero.title": "Services",
+    "hero.subtitle": "Automation, development and consulting for smarter business growth.",
+
+    "solutions.title": "Solutions in Action",
+    "solutions.intro": "Real projects showing what we deliver.",
+
+    "solutions.card1.title": "WhatsApp Bot for Clinics",
+    "solutions.card1.text": "Automated booking system with reminders.",
+
+    "solutions.card2.title": "Internal Reporting Panel",
+    "solutions.card2.text": "Custom dashboard for key metrics.",
+
+    "solutions.card3.title": "Existing Site Optimization",
+    "solutions.card3.text": "Load time, SEO and performance improvements."
+  }
+}

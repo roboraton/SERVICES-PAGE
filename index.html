@@ -1,184 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RTN Software — Web & Automation</title>
-  <meta name="description" content="Professional services in software development, web design, and automation." />
-  <meta name="author" content="Hector Gomez" />
-  <meta name="keywords" content="software development, web development, web design, process automation, custom software, website builder, business automation, digital solutions, IT services, workflow automation, cloud integration">
 
+  <!-- Título y descripción dinámicos -->
+  <title data-i18n="home.meta.title"></title>
+  <meta 
+    name="description" 
+    data-i18n="home.meta.description"
+  />
+
+  <meta name="author" content="Héctor Gómez" />
+  <meta name="keywords" content="software development, web development, automation, whatsapp bots, custom software, workflow automation, SQL, cloud tools" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
+  <!-- Styles & Scripts -->
   <link rel="stylesheet" href="styles/main.css" />
   <script src="scripts/main.js" defer></script>
+  <script src="scripts/i18n.js" defer></script>
+
 </head>
 
-<body>
-  <!-- HEADER / NAV -->
+<body data-page="home">
+
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header__inner">
       <a href="index.html" class="logo">RTN Software</a>
+
       <nav class="nav" id="nav">
         <ul class="nav__list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="references.html">References</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="about.html" data-i18n="nav.about">Sobre mí</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Servicios</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+          <li><a href="references.html" data-i18n="nav.references">Referencias</a></li>
         </ul>
       </nav>
-      <button type="button" class="hamburger" id="hamburger" aria-label="Menu">
-        ☰
-      </button>
+
+      <!-- Switch de idioma -->
+      <div class="lang-switch">
+        <button type="button" data-lang-switch="es" class="lang-switch__btn lang-switch__btn--active">ES</button>
+        <button type="button" data-lang-switch="en" class="lang-switch__btn">EN</button>
+      </div>
+
+      <button type="button" class="hamburger" id="hamburger" aria-label="Menu">☰</button>
     </div>
   </header>
 
   <!-- HERO -->
   <section class="hero" aria-labelledby="hero-title">
     <div class="container hero__content">
-      <h1 id="hero-title">Build. Automate. Ship.</h1>
-      <p>Custom web development and process automation to help your business move faster.</p>
+      <h1 id="hero-title" data-i18n="home.hero.title"></h1>
+      <p data-i18n="home.hero.subtitle"></p>
+
       <div class="hero__actions">
-        <a class="btn" href="services.html" role="button">See Services</a>
-        <a class="btn btn--secondary" href="#contact" role="button">Get a Quote</a>
+        <a class="btn" href="services.html" role="button" data-i18n="home.hero.servicesBtn"></a>
+        <a class="btn btn--secondary" href="#contact" role="button" data-i18n="home.hero.quoteBtn"></a>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT (resumen) -->
+  <!-- ABOUT SUMMARY -->
   <section id="about" class="about">
     <div class="about-bg"></div>
     <div class="container">
-      <h2>About Me</h2>
-      <p class="about__intro">I build digital solutions focused on reliability, performance, and automation.</p>
+      <h2 data-i18n="home.about.title"></h2>
+      <p class="about__intro" data-i18n="home.about.intro"></p>
 
       <div class="timeline">
+
         <div class="timeline-item">
-          <h3>🚀 Vision</h3>
-          <p>I help businesses scale by automating their most repetitive tasks and creating tools that grow with them.</p>
+          <h3 data-i18n="home.about.vision.title"></h3>
+          <p data-i18n="home.about.vision.text"></p>
         </div>
+
         <div class="timeline-item">
-          <h3>🛠️ Craft</h3>
-          <p>I write clean, modular code and focus on long-term maintainability — every project is built to evolve.</p>
+          <h3 data-i18n="home.about.craft.title"></h3>
+          <p data-i18n="home.about.craft.text"></p>
         </div>
+
         <div class="timeline-item">
-          <h3>🤝 Collaboration</h3>
-          <p>Working closely with clients, I transform ideas into functional products that solve real problems.</p>
+          <h3 data-i18n="home.about.collaboration.title"></h3>
+          <p data-i18n="home.about.collaboration.text"></p>
         </div>
+
         <div class="timeline-item">
-          <h3>📈 Results</h3>
-          <p>From websites to automations, everything I build is aimed at saving time, cutting costs, and driving growth.</p>
+          <h3 data-i18n="home.about.results.title"></h3>
+          <p data-i18n="home.about.results.text"></p>
         </div>
+
       </div>
+
       <div style="text-align:center; margin-top:2rem;">
-        <a href="about.html" class="btn">More About Me</a>
+        <a href="about.html" class="btn" data-i18n="home.about.moreBtn"></a>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- SERVICES CAROUSEL -->
   <section id="services" class="services">
     <div class="container">
-      <h2>Services</h2>
-      <p class="services__intro">From landing pages to full-stack apps and automation flows.</p>
+      <h2 data-i18n="home.services.title"></h2>
+      <p class="services__intro" data-i18n="home.services.intro"></p>
 
       <div class="carousel-wrapper">
-
         <button class="carousel-btn prev" aria-label="Previous">&#10094;</button>
 
         <div class="service-carousel" id="service-carousel">
+
           <div class="service-card">
-            <img src="images/service-1.jpg" alt="Website preview" loading="lazy" />
-            <h3>Web Development</h3>
-            <p>Responsive sites with clean markup and modern JS.</p>
+            <img src="images/service-1.jpg" alt="Website preview" loading="lazy" data-i18n-alt="home.services.item1.alt">
+            <h3 data-i18n="home.services.item1.title"></h3>
+            <p data-i18n="home.services.item1.text"></p>
           </div>
 
           <div class="service-card">
-            <img src="images/service-2.jpg" alt="Automation workflows" loading="lazy" />
-            <h3>Automation</h3>
-            <p>Workflows, bots and data pipelines to save time.</p>
+            <img src="images/service-2.jpg" alt="Automation flows" loading="lazy" data-i18n-alt="home.services.item2.alt">
+            <h3 data-i18n="home.services.item2.title"></h3>
+            <p data-i18n="home.services.item2.text"></p>
           </div>
 
           <div class="service-card">
-            <img src="images/service-3.jpg" alt="API integration" loading="lazy" />
-            <h3>Integrations</h3>
-            <p>APIs, third-party tools, cloud & database wiring.</p>
+            <img src="images/service-3.jpg" alt="API integrations" loading="lazy" data-i18n-alt="home.services.item3.alt">
+            <h3 data-i18n="home.services.item3.title"></h3>
+            <p data-i18n="home.services.item3.text"></p>
           </div>
 
           <div class="service-card">
-            <img src="images/service-4.jpg" alt="E-commerce" loading="lazy" />
-            <h3>E-commerce</h3>
-            <p>Catalogs, carts, payments, and admin dashboards.</p>
+            <img src="images/service-4.jpg" alt="E-commerce systems" loading="lazy" data-i18n-alt="home.services.item4.alt">
+            <h3 data-i18n="home.services.item4.title"></h3>
+            <p data-i18n="home.services.item4.text"></p>
           </div>
 
           <div class="service-card">
-            <img src="images/service-5.jpg" alt="Performance optimization" loading="lazy" />
-            <h3>Optimization</h3>
-            <p>Core Web Vitals, SEO basics, and performance tuning.</p>
+            <img src="images/service-5.jpg" alt="Performance optimization" loading="lazy" data-i18n-alt="home.services.item5.alt">
+            <h3 data-i18n="home.services.item5.title"></h3>
+            <p data-i18n="home.services.item5.text"></p>
           </div>
+
         </div>
 
         <button class="carousel-btn next" aria-label="Next">&#10095;</button>
       </div>
+
       <div class="carousel-indicators" id="carousel-indicators"></div>
 
       <div style="text-align:center; margin-top:2rem;">
-        <a href="services.html" class="btn">Explore All Services</a>
+        <a href="services.html" class="btn" data-i18n="home.services.moreBtn"></a>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="contact" aria-labelledby="contact-title">
-    <div class="container">
-      <h2 id="contact-title">Contact</h2>
-      <form class="contact__form" action="#" method="post">
-        <label>
-          Name
-          <input type="text" name="name" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" required />
-        </label>
-        <label>
-          Project details
-          <textarea name="message" rows="5" required></textarea>
-        </label>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-  </section>
+<section id="contact" class="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <h2 id="contact-title" data-i18n="contact.title">Contacto</h2>
+
+    <form class="contact__form" action="#" method="post">
+
+      <label>
+        <span data-i18n="contact.name">Nombre</span>
+        <input 
+          type="text" 
+          name="name" 
+          required 
+          placeholder="" 
+          data-i18n-placeholder="contact.name"
+        />
+      </label>
+
+      <label>
+        <span data-i18n="contact.email">Correo electrónico</span>
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder=""
+          data-i18n-placeholder="contact.email"
+        />
+      </label>
+
+      <label>
+        <span data-i18n="contact.details">Detalles del proyecto</span>
+        <textarea
+          name="message"
+          rows="5"
+          required
+          placeholder=""
+          data-i18n-placeholder="contact.details"
+        ></textarea>
+      </label>
+
+      <button type="submit" data-i18n="contact.send">Enviar</button>
+    </form>
+  </div>
+</section>
+
+
 
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer__grid">
+
       <div>
-        <h4>About</h4>
-        <p>Custom software, web development, and automation.</p>
+        <h4 data-i18n="footer.about.title"></h4>
+        <p data-i18n="footer.about.text"></p>
       </div>
+
       <div>
-        <h4>Links</h4>
+        <h4 data-i18n="footer.links.title"></h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html" data-i18n="footer.links.home"></a></li>
+          <li><a href="about.html" data-i18n="footer.links.about"></a></li>
+          <li><a href="services.html" data-i18n="footer.links.services"></a></li>
         </ul>
       </div>
+
       <div>
-        <h4>Contact</h4>
+        <h4 data-i18n="footer.contact.title"></h4>
         <ul>
-          <li><a href="#contact">Work with me</a></li>
-          <li><a href="references.html">References</a></li>
+          <li><a href="#contact" data-i18n="footer.contact.work"></a></li>
+          <li><a href="references.html" data-i18n="footer.contact.references"></a></li>
         </ul>
       </div>
+
     </div>
+
     <p class="copyright">
-      &copy; <span id="currentyear"></span> Héctor Gómez — <span id="lastmodified"></span>
+      &copy; <span id="currentyear"></span> Héctor Gómez —
+      <span id="lastmodified"></span>
     </p>
+
   </footer>
+
 </body>
 </html>

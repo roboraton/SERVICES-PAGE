@@ -1,0 +1,24 @@
+{
+  "es": {
+    "footer.about.title": "Acerca de",
+    "footer.about.text": "Desarrollo a medida, automatización y consultoría técnica.",
+    "footer.links.title": "Enlaces",
+    "footer.links.home": "Inicio",
+    "footer.links.about": "Acerca de",
+    "footer.links.services": "Servicios",
+    "footer.contact.title": "Contacto",
+    "footer.contact.work": "Trabaja conmigo",
+    "footer.contact.references": "Referencias"
+  },
+  "en": {
+    "footer.about.title": "About",
+    "footer.about.text": "Custom development, automation and technical consulting.",
+    "footer.links.title": "Links",
+    "footer.links.home": "Home",
+    "footer.links.about": "About",
+    "footer.links.services": "Services",
+    "footer.contact.title": "Contact",
+    "footer.contact.work": "Work with me",
+    "footer.contact.references": "References"
+  }
+}

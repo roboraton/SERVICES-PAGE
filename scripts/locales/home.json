@@ -1,0 +1,105 @@
+{
+  "es": {
+    "home.meta.title": "Inicio — RTN Software",
+    "home.meta.description": "Automatización, desarrollo web y software a medida para negocios modernos.",
+    
+    "home.hero.title": "Construye. Automatiza. Avanza.",
+    "home.hero.subtitle": "Soluciones digitales que hacen que tu negocio trabaje más rápido, mejor y por sí solo.",
+    "home.hero.servicesBtn": "Ver servicios",
+    "home.hero.quoteBtn": "Pedir cotización",
+    
+    "home.about.title": "Sobre mí",
+    "home.about.intro": "Creo soluciones digitales enfocadas en rendimiento, confiabilidad y automatización.",
+    
+    "home.about.vision.title": "🚀 Visión",
+    "home.about.vision.text": "Ayudo a negocios a escalar eliminando tareas repetitivas y creando herramientas personalizadas.",
+    
+    "home.about.craft.title": "🛠️ Trabajo",
+    "home.about.craft.text": "Código modular, limpio y preparado para crecer con tu negocio.",
+    
+    "home.about.collaboration.title": "🤝 Colaboración",
+    "home.about.collaboration.text": "Trabajo contigo para convertir ideas en productos reales y funcionales.",
+    
+    "home.about.results.title": "📈 Resultados",
+    "home.about.results.text": "Automatizaciones, webs y sistemas creados para ahorrar tiempo y dinero.",
+    
+    "home.about.moreBtn": "Leer más",
+    
+    "home.services.title": "Servicios",
+    "home.services.intro": "Desde landing pages hasta automatizaciones avanzadas.",
+    
+    "home.services.item1.title": "Desarrollo Web",
+    "home.services.item1.text": "Sitios rápidos, modernos y compatibles en todos los dispositivos.",
+    "home.services.item1.alt": "Vista previa de sitio web",
+    
+    "home.services.item2.title": "Automatización",
+    "home.services.item2.text": "Bots, flujos automáticos y procesamiento inteligente.",
+    "home.services.item2.alt": "Automatización y flujos de trabajo",
+    
+    "home.services.item3.title": "Integraciones",
+    "home.services.item3.text": "Conexión entre sistemas, APIs y herramientas en la nube.",
+    "home.services.item3.alt": "Integraciones y APIs",
+    
+    "home.services.item4.title": "E-commerce",
+    "home.services.item4.text": "Tiendas, catálogos, pagos y paneles administrativos.",
+    "home.services.item4.alt": "Sistemas de ecommerce",
+    
+    "home.services.item5.title": "Optimización",
+    "home.services.item5.text": "Mejoras de velocidad, SEO y rendimiento.",
+    "home.services.item5.alt": "Optimización de rendimiento",
+    
+    "home.services.moreBtn": "Ver todos los servicios"
+  },
+
+  "en": {
+    "home.meta.title": "Home — RTN Software",
+    "home.meta.description": "Automation, web development and custom software for modern businesses.",
+    
+    "home.hero.title": "Build. Automate. Ship.",
+    "home.hero.subtitle": "Digital solutions that help your business move faster and smarter.",
+    "home.hero.servicesBtn": "See Services",
+    "home.hero.quoteBtn": "Get a Quote",
+    
+    "home.about.title": "About Me",
+    "home.about.intro": "I build digital solutions focused on reliability, performance and automation.",
+    
+    "home.about.vision.title": "🚀 Vision",
+    "home.about.vision.text": "I help businesses scale by removing repetitive tasks and building custom tools.",
+    
+    "home.about.craft.title": "🛠️ Craft",
+    "home.about.craft.text": "Clean, modular code built for long-term maintainability.",
+    
+    "home.about.collaboration.title": "🤝 Collaboration",
+    "home.about.collaboration.text": "Working together to turn ideas into real, functional products.",
+    
+    "home.about.results.title": "📈 Results",
+    "home.about.results.text": "Websites, automations and systems designed to save time and money.",
+    
+    "home.about.moreBtn": "More About Me",
+    
+    "home.services.title": "Services",
+    "home.services.intro": "From landing pages to full-stack automations.",
+    
+    "home.services.item1.title": "Web Development",
+    "home.services.item1.text": "Modern, responsive sites built for speed.",
+    "home.services.item1.alt": "Website preview",
+    
+    "home.services.item2.title": "Automation",
+    "home.services.item2.text": "Bots, workflow automations and pipelines.",
+    "home.services.item2.alt": "Automation flows",
+    
+    "home.services.item3.title": "Integrations",
+    "home.services.item3.text": "APIs, cloud tools and database wiring.",
+    "home.services.item3.alt": "API integrations",
+    
+    "home.services.item4.title": "E-commerce",
+    "home.services.item4.text": "Catalogs, payments and admin dashboards.",
+    "home.services.item4.alt": "Ecommerce systems",
+    
+    "home.services.item5.title": "Optimization",
+    "home.services.item5.text": "Speed tuning, SEO basics and performance.",
+    "home.services.item5.alt": "Performance optimization",
+    
+    "home.services.moreBtn": "Explore All Services"
+  }
+}

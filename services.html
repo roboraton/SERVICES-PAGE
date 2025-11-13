@@ -1,148 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services — RTN Software | Web & Automation</title>
-  <meta name="description" content="Explore our software development, web design, and automation services designed to streamline your business and boost performance." />
-  <meta name="author" content="Hector Gomez" />
-  <meta name="keywords" content="software services, web development, automation, cloud integration, API development, ecommerce solutions, process optimization">
 
+  <!-- Title y Meta dinámicos -->
+  <title data-i18n="meta.title"></title>
+  <meta 
+    name="description" 
+    data-i18n="meta.description"
+  />
+
+  <meta name="author" content="Héctor Gómez" />
+  <meta name="keywords" content="software services, Web Development, Whastapp Automation, Custom Web Development, Custom Software, SQL Databases, E-commerce Solutions, Social Media Management, Logos, Brand Design">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
+  <!-- Styles and Scripts -->
   <link rel="stylesheet" href="styles/main.css" />
   <script src="scripts/main.js" defer></script>
+  <script src="scripts/i18n.js" defer></script>
 </head>
+
 <body>
   <!-- HEADER -->
   <header class="site-header">
     <div class="container header__inner">
       <a href="index.html" class="logo">RTN Software</a>
+
       <nav class="nav" id="nav">
         <ul class="nav__list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html" class="active">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="references.html">References</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="about.html" data-i18n="nav.about">Sobre mí</a></li>
+          <li><a href="services.html" class="active" data-i18n="nav.services">Servicios</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+          <li><a href="references.html" data-i18n="nav.references">Referencias</a></li>
         </ul>
       </nav>
+
+      <!-- Idioma -->
+      <div class="lang-switch">
+        <button type="button" data-lang-switch="es" class="lang-switch__btn lang-switch__btn--active">ES</button>
+        <button type="button" data-lang-switch="en" class="lang-switch__btn">EN</button>
+      </div>
+
       <button type="button" class="hamburger" id="hamburger" aria-label="Menu">☰</button>
     </div>
   </header>
 
   <main>
+
     <!-- HERO -->
     <section class="hero hero--small">
       <div class="container hero__content">
-        <h1>Our Services</h1>
-        <p>From landing pages to full automation systems — we build solutions that scale.</p>
+        <h1 data-i18n="hero.title">Servicios</h1>
+        <p data-i18n="hero.subtitle"></p>
       </div>
     </section>
 
     <!-- SERVICES LIST -->
     <section class="services-detailed">
-      <div class="container">
-
-        <article class="service-detail">
-          <img src="images/service-1.jpg" alt="Web Development">
-          <div>
-            <h2>Web Development</h2>
-            <p>Responsive, scalable websites built with performance and maintainability in mind. We focus on clean markup, modular components, and seamless user experiences.</p>
-            <ul>
-              <li>✅ Mobile-first responsive design</li>
-              <li>✅ SEO-ready structure</li>
-              <li>✅ Custom dashboards and tools</li>
-            </ul>
-            <a href="#contact" class="btn btn--secondary">Get a Quote</a>
-          </div>
-        </article>
-
-        <article class="service-detail">
-          <img src="images/service-2.jpg" alt="Automation">
-          <div>
-            <h2>Automation</h2>
-            <p>Eliminate repetitive work with automated workflows, bots, and data pipelines designed to boost efficiency and save valuable time.</p>
-            <ul>
-              <li>✅ End-to-end automation flows</li>
-              <li>✅ Real-time data processing</li>
-              <li>✅ Custom task schedulers and triggers</li>
-            </ul>
-            <a href="#contact" class="btn btn--secondary">Get a Quote</a>
-          </div>
-        </article>
-
-        <article class="service-detail">
-          <img src="images/service-3.jpg" alt="Integrations">
-          <div>
-            <h2>Integrations</h2>
-            <p>Connect your apps, tools, and services with powerful integrations that sync data seamlessly and automate workflows across platforms.</p>
-            <ul>
-              <li>✅ REST & GraphQL API integration</li>
-              <li>✅ Cloud and database connections</li>
-              <li>✅ CRM and payment gateway setup</li>
-            </ul>
-            <a href="#contact" class="btn btn--secondary">Get a Quote</a>
-          </div>
-        </article>
-
-        <article class="service-detail">
-          <img src="images/service-4.jpg" alt="E-commerce">
-          <div>
-            <h2>E-commerce Solutions</h2>
-            <p>Launch an online store that’s secure, fast, and built to convert — from product catalogs to full admin dashboards.</p>
-            <ul>
-              <li>✅ Product management & cart system</li>
-              <li>✅ Payment integration (Stripe, PayPal)</li>
-              <li>✅ Analytics and performance tracking</li>
-            </ul>
-            <a href="#contact" class="btn btn--secondary">Get a Quote</a>
-          </div>
-        </article>
-
-        <article class="service-detail">
-          <img src="images/service-5.jpg" alt="Optimization">
-          <div>
-            <h2>Optimization & SEO</h2>
-            <p>We analyze and optimize performance to achieve blazing load times, accessibility compliance, and top SEO scores.</p>
-            <ul>
-              <li>✅ Google Lighthouse 95+ scores</li>
-              <li>✅ Core Web Vitals improvement</li>
-              <li>✅ Speed & accessibility tuning</li>
-            </ul>
-            <a href="#contact" class="btn btn--secondary">Get a Quote</a>
-          </div>
-        </article>
-
+      <div class="container" id="services-list">
+        <!-- JS inyecta aquí los servicios -->
       </div>
     </section>
 
     <!-- SOLUTIONS IN ACTION -->
     <section class="solutions">
       <div class="container">
-        <h2>Solutions in Action</h2>
-        <p class="solutions__intro">Real-world projects that showcase how our services make an impact.</p>
+
+        <h2 data-i18n="solutions.title">Soluciones en acción</h2>
+        <p class="solutions__intro" data-i18n="solutions.intro"></p>
 
         <div class="solutions-grid">
+
           <article class="solution-card">
-            <img src="images/project-1.jpg" alt="Logistics Dashboard" loading="lazy">
-            <h3>Real-Time Logistics Dashboard</h3>
-            <p>Designed and deployed a predictive logistics platform with real-time tracking and interactive analytics.</p>
+            <img src="images/project-1.jpg" alt="Dashboard" loading="lazy">
+            <h3 data-i18n="solutions.card1.title"></h3>
+            <p data-i18n="solutions.card1.text"></p>
           </article>
 
           <article class="solution-card">
-            <img src="images/project-2.jpg" alt="Automation Platform" loading="lazy">
-            <h3>Custom Automation System</h3>
-            <p>Developed a fully automated booking and notification system saving over 200 hours/month.</p>
+            <img src="images/project-2.jpg" alt="Automation" loading="lazy">
+            <h3 data-i18n="solutions.card2.title"></h3>
+            <p data-i18n="solutions.card2.text"></p>
           </article>
 
           <article class="solution-card">
-            <img src="images/project-3.jpg" alt="SEO Optimization" loading="lazy">
-            <h3>Performance Optimization</h3>
-            <p>Improved site load times by 60% and boosted Lighthouse score from 72 to 98+.</p>
+            <img src="images/project-3.jpg" alt="Optimization" loading="lazy">
+            <h3 data-i18n="solutions.card3.title"></h3>
+            <p data-i18n="solutions.card3.text"></p>
           </article>
+
         </div>
       </div>
     </section>
@@ -150,52 +102,65 @@
     <!-- CONTACT -->
     <section id="contact" class="contact" aria-labelledby="contact-title">
       <div class="container">
-        <h2 id="contact-title">Contact</h2>
+        <h2 id="contact-title" data-i18n="contact.title"></h2>
+
         <form class="contact__form" action="#" method="post">
+
           <label>
-            Name
+            <span data-i18n="contact.name"></span>
             <input type="text" name="name" required />
           </label>
+
           <label>
-            Email
+            <span data-i18n="contact.email"></span>
             <input type="email" name="email" required />
           </label>
+
           <label>
-            Project details
+            <span data-i18n="contact.details"></span>
             <textarea name="message" rows="5" required></textarea>
           </label>
-          <button type="submit">Send</button>
+
+          <button type="submit" data-i18n="contact.send"></button>
         </form>
       </div>
     </section>
+
   </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer__grid">
+
       <div>
-        <h4>About</h4>
-        <p>Custom software, web development, and automation.</p>
+        <h4 data-i18n="footer.about.title"></h4>
+        <p data-i18n="footer.about.text"></p>
       </div>
+
       <div>
-        <h4>Links</h4>
+        <h4 data-i18n="footer.links.title"></h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html" data-i18n="footer.links.home"></a></li>
+          <li><a href="about.html" data-i18n="footer.links.about"></a></li>
+          <li><a href="services.html" data-i18n="footer.links.services"></a></li>
         </ul>
       </div>
+
       <div>
-        <h4>Contact</h4>
+        <h4 data-i18n="footer.contact.title"></h4>
         <ul>
-          <li><a href="#contact">Work with me</a></li>
-          <li><a href="references.html">References</a></li>
+          <li><a href="#contact" data-i18n="footer.contact.work"></a></li>
+          <li><a href="references.html" data-i18n="footer.contact.references"></a></li>
         </ul>
       </div>
+
     </div>
+
     <p class="copyright">
-      &copy; <span id="currentyear"></span> Héctor Gómez — <span id="lastmodified"></span>
+      &copy; <span id="currentyear"></span> Héctor Gómez —
+      <span id="lastmodified"></span>
     </p>
   </footer>
+
 </body>
 </html>
