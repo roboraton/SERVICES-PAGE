@@ -1,0 +1,127 @@
+{
+  "es": [
+    {
+      "id": 1,
+      "title": "Automatización de WhatsApp",
+      "description": "Bots personalizados para atención al cliente, agendado de citas y respuestas automáticas.",
+      "bullets": [
+        "Flujos conversacionales a medida",
+        "Recordatorios automáticos",
+        "Integración con SQL y Google Calendar",
+        "Conexión a CRMs y webs",
+        "Respuestas inteligentes"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Desarrollo Web a Medida",
+      "description": "Sitios profesionales con diseño responsive, rendimiento optimizado y seguridad.",
+      "bullets": [
+        "Landing pages y sitios corporativos",
+        "Dashboards y formularios avanzados",
+        "Optimización de velocidad",
+        "Buenas prácticas SEO",
+        "Arquitectura escalable"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Software Personalizado",
+      "description": "Herramientas hechas desde cero para automatizar procesos, reportes y flujos internos.",
+      "bullets": [
+        "Sistemas internos",
+        "Reportes automáticos",
+        "Integraciones entre plataformas",
+        "Alertas y monitoreo",
+        "Dashboards en tiempo real"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Bases de Datos SQL",
+      "description": "Diseño, conexión y optimización de bases para análisis, reportes y almacenamiento seguro.",
+      "bullets": [
+        "Modelado profesional",
+        "Consultas optimizadas",
+        "Integración con APIs",
+        "Dashboards conectados",
+        "Manejo seguro de información"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Gestión de Redes Sociales",
+      "description": "Administración profesional de Facebook e Instagram con diseño, contenido y métricas.",
+      "bullets": [
+        "Calendario básico",
+        "Diseño visual",
+        "Automatización inicial",
+        "Envío directo a WhatsApp",
+        "Análisis mensual"
+      ]
+    }
+  ],
+
+  "en": [
+    {
+      "id": 1,
+      "title": "WhatsApp Automation",
+      "description": "Custom bots for customer support, scheduling and automated responses.",
+      "bullets": [
+        "Custom conversational flows",
+        "Automated reminders",
+        "SQL & Google Calendar integration",
+        "CRM and website integration",
+        "Smart responses"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Custom Web Development",
+      "description": "Professional sites with responsive design, performance optimization and security.",
+      "bullets": [
+        "Landing pages & corporate sites",
+        "Internal dashboards",
+        "Speed optimization",
+        "SEO-friendly structure",
+        "Scalable architecture"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Custom Software",
+      "description": "Tools built from scratch to automate processes, reporting and internal workflows.",
+      "bullets": [
+        "Internal systems",
+        "Automated reporting",
+        "Cross-platform integrations",
+        "Alerts & monitoring",
+        "Real-time dashboards"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "SQL Databases",
+      "description": "Design, connection and optimization for reporting, analytics and secure storage.",
+      "bullets": [
+        "Professional modeling",
+        "Query optimization",
+        "API integration",
+        "Dashboard connections",
+        "Secure information handling"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Social Media Management",
+      "description": "Professional management of Facebook and Instagram with content, design and analytics.",
+      "bullets": [
+        "Editorial calendar",
+        "Brand visual design",
+        "Automated initial reply",
+        "Direct WhatsApp link",
+        "Monthly metrics"
+      ]
+    }
+  ]
+}

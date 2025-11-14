@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — RTN Software | Web & Automation</title>
-  <meta name="description" content="Learn more about RTN Software — clean code, automation, integrations, and scalable web solutions for your business." />
-  <meta name="author" content="Hector Gomez" />
-  <meta name="keywords" content="about RTN Software, web developer, automation expert, clean code, scalable web apps, integrations, cloud solutions">
+
+  <!-- Título y descripción dinámicos -->
+  <title data-i18n="about.meta.title"></title>
+  <meta name="description" data-i18n="about.meta.description" />
+
+  <meta name="author" content="Héctor Gómez" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,188 +16,162 @@
 
   <link rel="stylesheet" href="styles/main.css" />
   <script src="scripts/main.js" defer></script>
+  <script src="scripts/i18n.js" defer></script>
 </head>
 
-<body>
-  <!-- HEADER / NAV -->
+<body data-page="about">
+
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header__inner">
+
       <a href="index.html" class="logo">RTN Software</a>
+
       <nav class="nav" id="nav">
         <ul class="nav__list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="about.html" class="active" data-i18n="nav.about">Sobre mí</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Servicios</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+          <li><a href="references.html" data-i18n="nav.references">Referencias</a></li>
         </ul>
       </nav>
-      <button type="button" class="hamburger" id="hamburger" aria-label="Menu">
-        ☰
-      </button>
+
+      <div class="lang-switch">
+        <button data-lang-switch="es" class="lang-switch__btn lang-switch__btn--active">ES</button>
+        <button data-lang-switch="en" class="lang-switch__btn">EN</button>
+      </div>
+
+      <button class="hamburger" id="hamburger">☰</button>
     </div>
   </header>
 
+
   <main>
-    <!-- HERO -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="container hero__grid">
-        <div class="hero__copy">
-          <h1 id="hero-title">Who I Am</h1>
-          <p>
-            I design and build reliable web solutions, API integrations, and automation pipelines that make businesses faster and smarter.
-          </p>
-          <div class="hero__actions">
-            <a class="btn" href="services.html" role="button">See Services</a>
-            <a class="btn btn--secondary" href="#contact" role="button">Get in Touch</a>
-          </div>
-        </div>
-        <div class="hero__media">
-          <img
-            src="images/about-hero.jpg"
-            alt="Developer at work building scalable web solutions"
-            width="560" height="420" loading="lazy"
-          />
-        </div>
+
+    <!-- HERO CORPORATIVO -->
+    <section class="about-hero">
+      <div class="hero__grid">
+        <h1 data-i18n="about.hero.title"></h1>
+        <p data-i18n="about.hero.subtitle"></p>
       </div>
     </section>
 
-    <!-- ABOUT FEATURES -->
-    <section id="about" class="about" aria-labelledby="about-title">
-      <div class="container">
-        <h2 id="about-title">What I Bring to the Table</h2>
-        <p class="about__intro">
-          Every project I work on is built around clean code, automation, and scalable design principles — here’s what that looks like:
-        </p>
+    <!-- ABOUT CONTENT -->
+    <section class="about-content">
+      <h2 data-i18n="about.section.title"></h2>
+      <p class="about__intro" data-i18n="about.section.intro"></p>
 
-        <div class="card-grid">
-          <article class="card">
-            <h3 class="card__title">Clean Code</h3>
-            <ul class="card__list">
-              <li>Modular architecture</li>
-              <li>Scalable components</li>
-              <li>Performance first</li>
-            </ul>
-          </article>
+      <div class="about-cards">
 
-          <article class="card">
-            <h3 class="card__title">Security</h3>
-            <ul class="card__list">
-              <li>Env secrets</li>
-              <li>Auth & roles</li>
-              <li>Best practices</li>
-            </ul>
-          </article>
+        <article class="about-card">
+          <h3 data-i18n="about.cards.clean.title"></h3>
+          <ul>
+            <li data-i18n="about.cards.clean.item1"></li>
+            <li data-i18n="about.cards.clean.item2"></li>
+            <li data-i18n="about.cards.clean.item3"></li>
+          </ul>
+        </article>
 
-          <article class="card">
-            <h3 class="card__title">Integrations</h3>
-            <ul class="card__list">
-              <li>APIs & webhooks</li>
-              <li>Cloud & DB</li>
-              <li>Third-party tools</li>
-            </ul>
-          </article>
+        <article class="about-card">
+          <h3 data-i18n="about.cards.security.title"></h3>
+          <ul>
+            <li data-i18n="about.cards.security.item1"></li>
+            <li data-i18n="about.cards.security.item2"></li>
+            <li data-i18n="about.cards.security.item3"></li>
+          </ul>
+        </article>
 
-          <article class="card">
-            <h3 class="card__title">Testing</h3>
-            <ul class="card__list">
-              <li>Unit/E2E</li>
-              <li>CI-ready</li>
-              <li>Docs included</li>
-            </ul>
-          </article>
+        <article class="about-card">
+          <h3 data-i18n="about.cards.integrations.title"></h3>
+          <ul>
+            <li data-i18n="about.cards.integrations.item1"></li>
+            <li data-i18n="about.cards.integrations.item2"></li>
+            <li data-i18n="about.cards.integrations.item3"></li>
+          </ul>
+        </article>
 
-          <article class="card">
-            <h3 class="card__title">Responsive</h3>
-            <ul class="card__list">
-              <li>Mobile-first</li>
-              <li>Accessibility</li>
-              <li>Fast UX</li>
-            </ul>
-          </article>
+        <article class="about-card">
+          <h3 data-i18n="about.cards.testing.title"></h3>
+          <ul>
+            <li data-i18n="about.cards.testing.item1"></li>
+            <li data-i18n="about.cards.testing.item2"></li>
+            <li data-i18n="about.cards.testing.item3"></li>
+          </ul>
+        </article>
 
-          <article class="card">
-            <h3 class="card__title">Automation</h3>
-            <ul class="card__list">
-              <li>Workflows</li>
-              <li>Bots & tasks</li>
-              <li>Dashboards</li>
-            </ul>
-          </article>
+      </div>
 
-          <article class="card">
-            <h3 class="card__title">SEO Basics</h3>
-            <ul class="card__list">
-              <li>Meta & sitemap</li>
-              <li>Clean markup</li>
-              <li>Lazy loading</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3 class="card__title">Support</h3>
-            <ul class="card__list">
-              <li>Maintenance</li>
-              <li>Monitoring</li>
-              <li>Iterations</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="section-cta">
-          <a class="btn" href="#contact" role="button">Work with me</a>
-        </div>
+      <div class="section-cta">
+        <a href="#contact" class="btn" data-i18n="about.cta"></a>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="contact" aria-labelledby="contact-title">
+    <section id="contact" class="contact">
       <div class="container">
-        <h2 id="contact-title">Let's Talk</h2>
-        <form class="contact__form" action="#" method="post">
+        <h2 data-i18n="contact.title"></h2>
+
+        <form class="contact__form">
+
           <label>
-            Name
-            <input type="text" name="name" required />
+            <span data-i18n="contact.name"></span>
+            <input type="text" name="name" required data-i18n-placeholder="contact.name">
           </label>
+
           <label>
-            Email
-            <input type="email" name="email" required />
+            <span data-i18n="contact.email"></span>
+            <input type="email" name="email" required data-i18n-placeholder="contact.email">
           </label>
+
           <label>
-            Project details
-            <textarea name="message" rows="5" required></textarea>
+            <span data-i18n="contact.details"></span>
+            <textarea name="message" rows="5" required data-i18n-placeholder="contact.details"></textarea>
           </label>
-          <button type="submit">Send</button>
+
+          <button type="submit" data-i18n="contact.send"></button>
         </form>
+
       </div>
     </section>
+
   </main>
+
 
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer__grid">
+
       <div>
-        <h4>About</h4>
-        <p>Custom software, web development, and automation.</p>
+        <h4 data-i18n="footer.about.title"></h4>
+        <p data-i18n="footer.about.text"></p>
       </div>
+
       <div>
-        <h4>Links</h4>
+        <h4 data-i18n="footer.links.title"></h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html" data-i18n="footer.links.home"></a></li>
+          <li><a href="about.html" data-i18n="footer.links.about"></a></li>
+          <li><a href="services.html" data-i18n="footer.links.services"></a></li>
         </ul>
       </div>
+
       <div>
-        <h4>Contact</h4>
+        <h4 data-i18n="footer.contact.title"></h4>
         <ul>
-          <li><a href="#contact">Work with me</a></li>
-          <li><a href="references.html">References</a></li>
+          <li><a href="#contact" data-i18n="footer.contact.work"></a></li>
+          <li><a href="references.html" data-i18n="footer.contact.references"></a></li>
         </ul>
       </div>
+
     </div>
+
     <p class="copyright">
-      &copy; <span id="currentyear"></span> Héctor Gómez — <span id="lastmodified"></span>
+      &copy; <span id="currentyear"></span> Héctor Gómez —
+      <span id="lastmodified"></span>
     </p>
+
   </footer>
+
 </body>
 </html>

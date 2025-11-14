@@ -1,41 +1,45 @@
 {
   "es": {
-    "meta.title": "Servicios — RTN Software | Web & Automatización",
-    "meta.description": "Servicios profesionales de automatización, desarrollo web y software a medida.",
+    "meta.title": "Servicios — RTN Software",
+    "meta.description": "Automatización de WhatsApp, desarrollo web, software a medida, bases de datos y consultoría profesional.",
 
-    "hero.title": "Servicios",
-    "hero.subtitle": "Automatización, desarrollo y consultoría para que tu negocio crezca con inteligencia.",
+    "services.hero.title": "Servicios",
+    "services.hero.subtitle": "Soluciones para negocio: automatización, web, software, bases de datos y más.",
+    "services.hero.exploreBtn": "Explorar servicios",
+    "services.hero.quoteBtn": "Solicitar cotización",
 
     "solutions.title": "Soluciones en acción",
-    "solutions.intro": "Proyectos reales que muestran nuestro impacto.",
+    "solutions.intro": "Casos reales de implementación con resultados medibles.",
 
-    "solutions.card1.title": "Bot de WhatsApp para clínicas",
-    "solutions.card1.text": "Sistema de reservas automatizado con recordatorios.",
+    "solutions.card1.title": "Dashboard Predictivo",
+    "solutions.card1.text": "Plataforma logística con seguimiento en tiempo real y analítica interactiva.",
 
-    "solutions.card2.title": "Panel web para reportes internos",
-    "solutions.card2.text": "Dashboard personalizado para métricas clave.",
+    "solutions.card2.title": "Automatización Total",
+    "solutions.card2.text": "Sistema de agendado y confirmaciones 100% automatizado que ahorra más de 200 horas por mes.",
 
-    "solutions.card3.title": "Optimización de sitio existente",
-    "solutions.card3.text": "Mejoras de carga, SEO y rendimiento."
+    "solutions.card3.title": "Optimización Web",
+    "solutions.card3.text": "Sitios optimizados con mejoras de velocidad y Lighthouse de 72 a 98+."
   },
 
   "en": {
-    "meta.title": "Services — RTN Software | Web & Automation",
-    "meta.description": "Professional automation, web development and custom software services.",
+    "meta.title": "Services — RTN Software",
+    "meta.description": "WhatsApp automation, custom web development, software solutions, databases and professional consulting.",
 
-    "hero.title": "Services",
-    "hero.subtitle": "Automation, development and consulting for smarter business growth.",
+    "services.hero.title": "Services",
+    "services.hero.subtitle": "Business solutions: automation, web, software, databases and more.",
+    "services.hero.exploreBtn": "Explore services",
+    "services.hero.quoteBtn": "Request a quote",
 
     "solutions.title": "Solutions in Action",
-    "solutions.intro": "Real projects showing what we deliver.",
+    "solutions.intro": "Real implementation cases with measurable results.",
 
-    "solutions.card1.title": "WhatsApp Bot for Clinics",
-    "solutions.card1.text": "Automated booking system with reminders.",
+    "solutions.card1.title": "Predictive Dashboard",
+    "solutions.card1.text": "Logistics platform with real-time tracking and interactive analytics.",
 
-    "solutions.card2.title": "Internal Reporting Panel",
-    "solutions.card2.text": "Custom dashboard for key metrics.",
+    "solutions.card2.title": "Full Automation",
+    "solutions.card2.text": "Fully automated booking and confirmation system saving over 200 hours per month.",
 
-    "solutions.card3.title": "Existing Site Optimization",
-    "solutions.card3.text": "Load time, SEO and performance improvements."
+    "solutions.card3.title": "Web Optimization",
+    "solutions.card3.text": "Website performance improved with Lighthouse scores boosted from 72 to 98+."
   }
 }

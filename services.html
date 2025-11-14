@@ -23,9 +23,11 @@
   <link rel="stylesheet" href="styles/main.css" />
   <script src="scripts/main.js" defer></script>
   <script src="scripts/i18n.js" defer></script>
+  <script src="scripts/services.js" defer></script>
+
 </head>
 
-<body>
+<body data-page="services">
   <!-- HEADER -->
   <header class="site-header">
     <div class="container header__inner">
@@ -54,12 +56,21 @@
   <main>
 
     <!-- HERO -->
-    <section class="hero hero--small">
+    <section class="hero hero--parallax" aria-labelledby="hero-title">
+      <div class="hero__bg" style="background-image: url('images/hero-img.jpg')"></div>
+
       <div class="container hero__content">
-        <h1 data-i18n="hero.title">Servicios</h1>
-        <p data-i18n="hero.subtitle"></p>
+        <h1 id="hero-title" data-i18n="services.hero.title"></h1>
+        <p data-i18n="services.hero.subtitle"></p>
+
+        <div class="hero__actions">
+          <a class="btn" href="#services-list" role="button" data-i18n="services.hero.exploreBtn"></a>
+          <a class="btn btn--secondary" href="#contact" role="button" data-i18n="services.hero.quoteBtn"></a>
+        </div>
       </div>
     </section>
+
+
 
     <!-- SERVICES LIST -->
     <section class="services-detailed">

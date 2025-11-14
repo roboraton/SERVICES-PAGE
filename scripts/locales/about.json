@@ -1,14 +1,67 @@
 {
   "es": {
     "about.meta.title": "Sobre mí — RTN Software",
-    "about.meta.description": "Desarrollo web, automatización y software personalizado.",
-    
-    "about.title": "Sobre mí"
+    "about.meta.description": "Conoce mi experiencia en desarrollo web, automatización, integraciones y soluciones técnicas a medida.",
+
+    "about.hero.title": "Quién soy",
+    "about.hero.subtitle": "Desarrollo soluciones confiables: automatización, integraciones y sitios web pensados para crecer contigo.",
+
+    "about.section.title": "Lo que puedo hacer por tu negocio",
+    "about.section.intro": "Mi enfoque combina desarrollo limpio, automatización, seguridad y escalabilidad. Así se ve ese trabajo en práctica:",
+
+    "about.cards.clean.title": "Código Limpio",
+    "about.cards.clean.item1": "Arquitectura modular",
+    "about.cards.clean.item2": "Componentes escalables",
+    "about.cards.clean.item3": "Rendimiento primero",
+
+    "about.cards.security.title": "Seguridad",
+    "about.cards.security.item1": "Manejo de .env y secretos",
+    "about.cards.security.item2": "Autenticación y roles",
+    "about.cards.security.item3": "Buenas prácticas técnicas",
+
+    "about.cards.integrations.title": "Integraciones",
+    "about.cards.integrations.item1": "APIs y webhooks",
+    "about.cards.integrations.item2": "Conexiones a nube y bases de datos",
+    "about.cards.integrations.item3": "Herramientas externas",
+
+    "about.cards.testing.title": "Pruebas",
+    "about.cards.testing.item1": "Tests unitarios y E2E",
+    "about.cards.testing.item2": "Listo para CI/CD",
+    "about.cards.testing.item3": "Documentación incluida",
+
+    "about.cta": "Trabaja conmigo"
   },
+
   "en": {
     "about.meta.title": "About Me — RTN Software",
-    "about.meta.description": "Web development, automation and custom software.",
-    
-    "about.title": "About Me"
+    "about.meta.description": "Learn about my experience in web development, automation, integrations, and technical solutions.",
+
+    "about.hero.title": "Who I Am",
+    "about.hero.subtitle": "I build reliable automation, integrations, and scalable web platforms to support your business growth.",
+
+    "about.section.title": "What I Bring to the Table",
+    "about.section.intro": "My approach combines clean development, automation, security, and scalability. Here’s what that looks like in practice:",
+
+    "about.cards.clean.title": "Clean Code",
+    "about.cards.clean.item1": "Modular architecture",
+    "about.cards.clean.item2": "Scalable components",
+    "about.cards.clean.item3": "Performance first",
+
+    "about.cards.security.title": "Security",
+    "about.cards.security.item1": "Env secrets handled properly",
+    "about.cards.security.item2": "Auth roles and permissions",
+    "about.cards.security.item3": "Best practices applied",
+
+    "about.cards.integrations.title": "Integrations",
+    "about.cards.integrations.item1": "APIs & webhooks",
+    "about.cards.integrations.item2": "Cloud & database connections",
+    "about.cards.integrations.item3": "Third-party tools",
+
+    "about.cards.testing.title": "Testing",
+    "about.cards.testing.item1": "Unit & E2E tests",
+    "about.cards.testing.item2": "CI/CD ready",
+    "about.cards.testing.item3": "Documentation included",
+
+    "about.cta": "Work with me"
   }
 }
