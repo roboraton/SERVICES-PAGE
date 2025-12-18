@@ -115,25 +115,40 @@
       <div class="container">
         <h2 id="contact-title" data-i18n="contact.title"></h2>
 
-        <form class="contact__form" action="#" method="post">
-
+        <form
+          class="contact__form"
+          action="https://hotmail.us22.list-manage.com/subscribe/post?u=7e258f18988abc45ff50fffd7&amp;id=f20d41c8a0"
+          method="post"
+          target="_blank"
+          novalidate
+        >
           <label>
             <span data-i18n="contact.name"></span>
-            <input type="text" name="name" required />
+            <input type="text" name="FNAME" />
           </label>
 
           <label>
             <span data-i18n="contact.email"></span>
-            <input type="email" name="email" required />
+            <input type="email" name="EMAIL" required />
           </label>
 
           <label>
             <span data-i18n="contact.details"></span>
-            <textarea name="message" rows="5" required></textarea>
+            <textarea name="MESSAGE" rows="5"></textarea>
           </label>
+
+          <!-- Anti-bot (NO borrar) -->
+          <div style="position:absolute; left:-5000px;" aria-hidden="true">
+            <input
+              type="text"
+              name="b_7e258f18988abc45ff50fffd7_f20d41c8a0"
+              tabindex="-1"
+            />
+          </div>
 
           <button type="submit" data-i18n="contact.send"></button>
         </form>
+
       </div>
     </section>
 
