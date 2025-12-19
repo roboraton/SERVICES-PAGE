@@ -3,6 +3,7 @@
     "contact.title": "Contacto",
     "contact.name": "Nombre",
     "contact.email": "Correo electrónico",
+    "contact.phone": "Teléfono",
     "contact.details": "Detalles del proyecto",
     "contact.send": "Enviar"
   },
@@ -10,6 +11,7 @@
     "contact.title": "Contact",
     "contact.name": "Name",
     "contact.email": "Email",
+    "contact.phone": "Phone",
     "contact.details": "Project details",
     "contact.send": "Send"
   }

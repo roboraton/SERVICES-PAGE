@@ -116,33 +116,29 @@ if (carousel && cards.length > 0) {
   });
 }
 
-// Formulario + localStorage
-const form = document.querySelector(".contact__form");
-if (form) {
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const data = Object.fromEntries(new FormData(form).entries());
-    const leads = JSON.parse(localStorage.getItem("leads") || "[]");
-    leads.push({ ...data, ts: Date.now() });
-    localStorage.setItem("leads", JSON.stringify(leads));
-    alert(`Thanks, ${data.name}! I'll reply to ${data.email} soon.`);
-    form.reset();
-  });
-}
+initParallaxHero();
+
+// Animaciones de aparición con IntersectionObserver para el formulario y timeline
 
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.querySelector("#mc-embedded-subscribe-form");
-  const successBox = document.getElementById("mce-success-response");
-  const customMessage = document.querySelector(".form-success-message");
+  const items = document.querySelectorAll(".timeline-item, .fade-in-up");
 
-  if (!form || !successBox || !customMessage) return;
+  if (!items.length) return;
 
-  const observer = new MutationObserver(() => {
-    if (successBox.textContent.trim() !== "") {
-      form.classList.add("form-hidden");
-      customMessage.style.display = "block";
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        } else {
+          entry.target.classList.remove("visible"); // para que reaparezcan
+        }
+      });
+    },
+    {
+      threshold: 0.2,
     }
-  });
+  );
 
-  observer.observe(successBox, { childList: true });
+  items.forEach((el) => observer.observe(el));
 });
