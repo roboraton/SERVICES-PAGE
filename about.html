@@ -33,7 +33,6 @@
           <li><a href="about.html" class="active" data-i18n="nav.about">Sobre mí</a></li>
           <li><a href="services.html" data-i18n="nav.services">Servicios</a></li>
           <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
-          <li><a href="references.html" data-i18n="nav.references">Referencias</a></li>
         </ul>
       </nav>
 
@@ -107,32 +106,43 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
+       <!-- CONTACT -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
       <div class="container">
-        <h2 data-i18n="contact.title"></h2>
+        <h2 id="contact-title" data-i18n="contact.title"></h2>
 
-        <form class="contact__form">
-
+        <form
+          class="contact__form"
+          action="https://hotmail.us22.list-manage.com/subscribe/post?u=7e258f18988abc45ff50fffd7&amp;id=f20d41c8a0"
+          method="post"
+          target="_blank"
+          novalidate
+        >
           <label>
             <span data-i18n="contact.name"></span>
-            <input type="text" name="name" required data-i18n-placeholder="contact.name">
+            <input type="text" name="FNAME" />
           </label>
 
           <label>
             <span data-i18n="contact.email"></span>
-            <input type="email" name="email" required data-i18n-placeholder="contact.email">
+            <input type="email" name="EMAIL" required />
           </label>
 
           <label>
             <span data-i18n="contact.details"></span>
-            <textarea name="message" rows="5" required data-i18n-placeholder="contact.details"></textarea>
+            <textarea name="MESSAGE" rows="5"></textarea>
           </label>
 
-          <button type="submit" data-i18n="contact.send"></button>
-        </form>
+          <!-- Anti-bot (NO borrar) -->
+          <div style="position:absolute; left:-5000px;" aria-hidden="true">
+            <input
+              type="text"
+              name="b_7e258f18988abc45ff50fffd7_f20d41c8a0"
+              tabindex="-1"
+            />
+          </div>
 
-      </div>
+          <button type="submit" data-i18n="contact.send"></button>
     </section>
 
   </main>
@@ -156,13 +166,6 @@
         </ul>
       </div>
 
-      <div>
-        <h4 data-i18n="footer.contact.title"></h4>
-        <ul>
-          <li><a href="#contact" data-i18n="footer.contact.work"></a></li>
-          <li><a href="references.html" data-i18n="footer.contact.references"></a></li>
-        </ul>
-      </div>
 
     </div>
 

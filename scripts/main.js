@@ -129,3 +129,20 @@ if (form) {
     form.reset();
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("#mc-embedded-subscribe-form");
+  const successBox = document.getElementById("mce-success-response");
+  const customMessage = document.querySelector(".form-success-message");
+
+  if (!form || !successBox || !customMessage) return;
+
+  const observer = new MutationObserver(() => {
+    if (successBox.textContent.trim() !== "") {
+      form.classList.add("form-hidden");
+      customMessage.style.display = "block";
+    }
+  });
+
+  observer.observe(successBox, { childList: true });
+});
